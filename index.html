@@ -3,93 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoamOrder — Better Ordering, Faster</title>
+    <title>Northline Studio | Commercial Architectural Portfolio</title>
     <meta
       name="description"
-      content="FoamOrder helps teams streamline orders, reduce errors, and move faster."
+      content="Explore Northline Studio's commercial architectural portfolio featuring workplace, hospitality, retail, healthcare, and mixed-use environments."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a href="#" class="logo">FoamOrder</a>
-        <nav>
-          <a href="#features">Features</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#cta" class="btn btn-small">Get Started</a>
+        <a href="#" class="logo">Northline Studio</a>
+        <nav aria-label="Primary">
+          <a href="#intro">Overview</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <p class="eyebrow">New • Lightweight • Fast</p>
-            <h1>Launch your ordering workflow in minutes</h1>
+      <section id="intro" class="hero">
+        <div class="container">
+          <header class="hero-content">
+            <p class="eyebrow">Selected Works</p>
+            <h1>Commercial Project Portfolio</h1>
             <p>
-              FoamOrder gives your team a clean, reliable system for capturing
-              requests and fulfilling them quickly—without spreadsheet chaos.
+              Northline Studio delivers architecture for corporate workplaces,
+              civic venues, hospitality destinations, retail flagships, and
+              mixed-use environments shaped for performance, experience, and
+              long-term operational value.
             </p>
-            <div class="hero-actions">
-              <a href="#cta" class="btn">Start Free</a>
-              <a href="#features" class="btn btn-ghost">See Features</a>
-            </div>
-          </div>
-          <div class="hero-card" aria-label="Product preview">
-            <h2>Today's Snapshot</h2>
-            <ul>
-              <li><strong>128</strong> Orders processed</li>
-              <li><strong>98.7%</strong> Accuracy rate</li>
-              <li><strong>42%</strong> Faster fulfillment</li>
-            </ul>
-          </div>
+          </header>
         </div>
       </section>
 
-      <section id="features" class="section">
+      <section id="projects" class="section" aria-labelledby="projects-heading">
         <div class="container">
-          <h2>Why teams choose FoamOrder</h2>
-          <div class="features">
+          <header>
+            <h2 id="projects-heading">Projects</h2>
+            <p>Filter by sector, scale, and delivery stage.</p>
+          </header>
+
+          <div class="filter-toolbar" role="region" aria-label="Project filters">
+            <label for="project-type-filter">Project Type</label>
+            <select id="project-type-filter" name="project-type">
+              <option value="all">All Types</option>
+              <option value="workplace">Workplace</option>
+              <option value="hospitality">Hospitality</option>
+              <option value="retail">Retail</option>
+              <option value="mixed-use">Mixed-Use</option>
+            </select>
+
+            <label for="project-stage-filter">Stage</label>
+            <select id="project-stage-filter" name="project-stage">
+              <option value="all">All Stages</option>
+              <option value="completed">Completed</option>
+              <option value="in-progress">In Progress</option>
+              <option value="concept">Concept</option>
+            </select>
+          </div>
+
+          <div class="project-gallery" aria-label="Project card gallery">
             <article class="card">
-              <h3>Simple intake forms</h3>
-              <p>Collect exactly what you need with customizable fields.</p>
+              <header>
+                <h3>Harbor Exchange Office Campus</h3>
+              </header>
+              <p>Adaptive workplace district integrating public terraces and mobility hubs.</p>
             </article>
             <article class="card">
-              <h3>Real-time status</h3>
-              <p>Track every order from submission to completion.</p>
+              <header>
+                <h3>Asterion Hotel & Conference Center</h3>
+              </header>
+              <p>Boutique hospitality and event complex designed for year-round programming.</p>
             </article>
             <article class="card">
-              <h3>Instant visibility</h3>
-              <p>Get clean metrics to improve turnaround and planning.</p>
+              <header>
+                <h3>Market Row Retail Pavilion</h3>
+              </header>
+              <p>Urban retail destination with modular storefronts and shaded pedestrian lanes.</p>
+            </article>
+            <article class="card">
+              <header>
+                <h3>Riverview Commons</h3>
+              </header>
+              <p>Mixed-use riverfront redevelopment combining commercial, cultural, and civic spaces.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="testimonials" class="section section-muted">
+      <section id="contact" class="section section-muted" aria-labelledby="contact-heading">
         <div class="container">
-          <h2>What customers say</h2>
-          <blockquote>
-            “FoamOrder cut our processing time almost in half in the first week.”
-          </blockquote>
-          <p class="quote-author">— Alex R., Operations Manager</p>
-        </div>
-      </section>
-
-      <section id="cta" class="section cta">
-        <div class="container cta-box">
-          <h2>Ready to simplify ordering?</h2>
-          <p>Start with a free trial and see results in your first day.</p>
-          <a href="#" class="btn">Create Free Account</a>
+          <header>
+            <h2 id="contact-heading">Contact</h2>
+          </header>
+          <p>For detailed case studies, planning packages, and collaboration inquiries, contact the studio team.</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>© 2026 FoamOrder. All rights reserved.</p>
+        <p>© 2026 Northline Studio. All rights reserved.</p>
       </div>
     </footer>
   </body>
