@@ -78,6 +78,144 @@
         </div>
       </section>
 
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Project Gallery</h2>
+          <div class="filter-toolbar" aria-label="Project filters">
+            <div class="filter-group">
+              <label for="industry-filter">Industry</label>
+              <select id="industry-filter" name="industry">
+                <option value="all">All</option>
+                <option value="hospitality">Hospitality</option>
+                <option value="retail">Retail</option>
+                <option value="workplace">Workplace</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="mixed-use">Mixed-Use</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="setting-filter">Setting</label>
+              <select id="setting-filter" name="setting">
+                <option value="all">All</option>
+                <option value="bar">Bar</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="hotel">Hotel</option>
+                <option value="lobby">Lobby</option>
+                <option value="cafe">Cafe</option>
+                <option value="office">Office</option>
+                <option value="patio">Patio</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="environment-filter">Environment</label>
+              <select id="environment-filter" name="environment">
+                <option value="all">All</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+              </select>
+            </div>
+          </div>
+
+          <p id="no-results" hidden>
+            No matching projects found. Try selecting “All” for one or more filters.
+          </p>
+
+          <div class="projects-grid" id="projects-grid">
+            <article class="project-card" data-industry="hospitality" data-setting="hotel" data-environment="indoor">
+              <h3>Project 01</h3>
+              <p>Placeholder description for a hospitality indoor hotel concept.</p>
+              <p class="tag-row"><span class="tag-chip">Hospitality</span><span class="tag-chip">Hotel</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="hospitality" data-setting="restaurant" data-environment="indoor">
+              <h3>Project 02</h3>
+              <p>Placeholder description for a hospitality indoor restaurant concept.</p>
+              <p class="tag-row"><span class="tag-chip">Hospitality</span><span class="tag-chip">Restaurant</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="hospitality" data-setting="bar" data-environment="outdoor">
+              <h3>Project 03</h3>
+              <p>Placeholder description for a hospitality outdoor bar concept.</p>
+              <p class="tag-row"><span class="tag-chip">Hospitality</span><span class="tag-chip">Bar</span><span class="tag-chip">Outdoor</span></p>
+            </article>
+            <article class="project-card" data-industry="retail" data-setting="lobby" data-environment="indoor">
+              <h3>Project 04</h3>
+              <p>Placeholder description for a retail indoor lobby concept.</p>
+              <p class="tag-row"><span class="tag-chip">Retail</span><span class="tag-chip">Lobby</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="retail" data-setting="cafe" data-environment="indoor">
+              <h3>Project 05</h3>
+              <p>Placeholder description for a retail indoor cafe concept.</p>
+              <p class="tag-row"><span class="tag-chip">Retail</span><span class="tag-chip">Cafe</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="retail" data-setting="patio" data-environment="outdoor">
+              <h3>Project 06</h3>
+              <p>Placeholder description for a retail outdoor patio concept.</p>
+              <p class="tag-row"><span class="tag-chip">Retail</span><span class="tag-chip">Patio</span><span class="tag-chip">Outdoor</span></p>
+            </article>
+            <article class="project-card" data-industry="workplace" data-setting="office" data-environment="indoor">
+              <h3>Project 07</h3>
+              <p>Placeholder description for a workplace indoor office concept.</p>
+              <p class="tag-row"><span class="tag-chip">Workplace</span><span class="tag-chip">Office</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="workplace" data-setting="lobby" data-environment="indoor">
+              <h3>Project 08</h3>
+              <p>Placeholder description for a workplace indoor lobby concept.</p>
+              <p class="tag-row"><span class="tag-chip">Workplace</span><span class="tag-chip">Lobby</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="workplace" data-setting="cafe" data-environment="outdoor">
+              <h3>Project 09</h3>
+              <p>Placeholder description for a workplace outdoor cafe concept.</p>
+              <p class="tag-row"><span class="tag-chip">Workplace</span><span class="tag-chip">Cafe</span><span class="tag-chip">Outdoor</span></p>
+            </article>
+            <article class="project-card" data-industry="healthcare" data-setting="lobby" data-environment="indoor">
+              <h3>Project 10</h3>
+              <p>Placeholder description for a healthcare indoor lobby concept.</p>
+              <p class="tag-row"><span class="tag-chip">Healthcare</span><span class="tag-chip">Lobby</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="healthcare" data-setting="restaurant" data-environment="indoor">
+              <h3>Project 11</h3>
+              <p>Placeholder description for a healthcare indoor restaurant concept.</p>
+              <p class="tag-row"><span class="tag-chip">Healthcare</span><span class="tag-chip">Restaurant</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="healthcare" data-setting="patio" data-environment="outdoor">
+              <h3>Project 12</h3>
+              <p>Placeholder description for a healthcare outdoor patio concept.</p>
+              <p class="tag-row"><span class="tag-chip">Healthcare</span><span class="tag-chip">Patio</span><span class="tag-chip">Outdoor</span></p>
+            </article>
+            <article class="project-card" data-industry="mixed-use" data-setting="hotel" data-environment="indoor">
+              <h3>Project 13</h3>
+              <p>Placeholder description for a mixed-use indoor hotel concept.</p>
+              <p class="tag-row"><span class="tag-chip">Mixed-Use</span><span class="tag-chip">Hotel</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="mixed-use" data-setting="bar" data-environment="indoor">
+              <h3>Project 14</h3>
+              <p>Placeholder description for a mixed-use indoor bar concept.</p>
+              <p class="tag-row"><span class="tag-chip">Mixed-Use</span><span class="tag-chip">Bar</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="mixed-use" data-setting="cafe" data-environment="outdoor">
+              <h3>Project 15</h3>
+              <p>Placeholder description for a mixed-use outdoor cafe concept.</p>
+              <p class="tag-row"><span class="tag-chip">Mixed-Use</span><span class="tag-chip">Cafe</span><span class="tag-chip">Outdoor</span></p>
+            </article>
+            <article class="project-card" data-industry="hospitality" data-setting="lobby" data-environment="outdoor">
+              <h3>Project 16</h3>
+              <p>Placeholder description for a hospitality outdoor lobby concept.</p>
+              <p class="tag-row"><span class="tag-chip">Hospitality</span><span class="tag-chip">Lobby</span><span class="tag-chip">Outdoor</span></p>
+            </article>
+            <article class="project-card" data-industry="retail" data-setting="bar" data-environment="indoor">
+              <h3>Project 17</h3>
+              <p>Placeholder description for a retail indoor bar concept.</p>
+              <p class="tag-row"><span class="tag-chip">Retail</span><span class="tag-chip">Bar</span><span class="tag-chip">Indoor</span></p>
+            </article>
+            <article class="project-card" data-industry="workplace" data-setting="restaurant" data-environment="outdoor">
+              <h3>Project 18</h3>
+              <p>Placeholder description for a workplace outdoor restaurant concept.</p>
+              <p class="tag-row"><span class="tag-chip">Workplace</span><span class="tag-chip">Restaurant</span><span class="tag-chip">Outdoor</span></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="cta" class="section cta">
         <div class="container cta-box">
           <h2>Ready to simplify ordering?</h2>
@@ -92,5 +230,52 @@
         <p>© 2026 FoamOrder. All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+      (() => {
+        const filters = {
+          industry: document.querySelector('#industry-filter'),
+          setting: document.querySelector('#setting-filter'),
+          environment: document.querySelector('#environment-filter')
+        };
+        const cards = Array.from(document.querySelectorAll('.project-card'));
+        const noResults = document.querySelector('#no-results');
+
+        const applyFilters = () => {
+          const active = {
+            industry: filters.industry.value,
+            setting: filters.setting.value,
+            environment: filters.environment.value
+          };
+
+          let visibleCount = 0;
+
+          cards.forEach((card) => {
+            const matchesIndustry =
+              active.industry === 'all' || card.dataset.industry === active.industry;
+            const matchesSetting =
+              active.setting === 'all' || card.dataset.setting === active.setting;
+            const matchesEnvironment =
+              active.environment === 'all' || card.dataset.environment === active.environment;
+
+            const isVisible = matchesIndustry && matchesSetting && matchesEnvironment;
+            card.hidden = !isVisible;
+
+            if (isVisible) {
+              visibleCount += 1;
+            }
+          });
+
+          noResults.hidden = visibleCount !== 0;
+        };
+
+        Object.values(filters).forEach((filter) => {
+          filter.addEventListener('change', applyFilters);
+        });
+
+        applyFilters();
+      })();
+    </script>
+
   </body>
 </html>
